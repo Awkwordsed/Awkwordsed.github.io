@@ -1,0 +1,195 @@
+@font-face {
+	font-family:"ASTERA";
+	src: url("fonts/ASTERA.ttf") format("truetype");
+}
+@font-face {
+	font-family:"MERAGEN";
+	src: url("fonts/MERAGEN.ttf") format("truetype");
+}
+
+html, body, head {
+	background-image: url(bg-1.png);  
+	color: #4ADCF0;
+	cursor: url("images/NormalSelect.png"), default !important;
+	cursor: url("images/NormalSelect.png"), pointer !important;
+}
+
+p {
+	font-family:"ASTERA";
+	font-size: 28px;
+	position: absolute;
+	left: 55px;
+	top: 10px;
+	color: #4ADCF0;
+}
+
+p1 {
+	position: absolute;
+	left: 290px;
+	top: 42px;
+	font-family:"MERAGEN";
+	font-size: 16px;
+	color: #4ADCF0;
+}
+
+p2 {
+	position: absolute;
+	right: 133px;
+	top: 45px;
+	font-family:"MERAGEN";
+	font-size: 7px;
+	color: #4ADCF0;
+}
+
+#BACKBOX {
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.0;
+}
+
+#BARBG {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	width: 1340px;
+	height: 55px;
+	opacity: 0.5;
+}
+
+#KBAR {
+	position: absolute;
+	left: 9px;
+	top: 26px;
+	width: 238px;
+	height: 48px;
+	opacity: 0.3;
+}
+
+
+#KBUTTON {
+	position: absolute;
+	left: 20px;
+	top: 35px;
+	width: 30px;
+	height: 30px;
+	opacity: 0.9;
+}
+
+#BARR {
+	position: absolute;
+	right: 10px;
+	top: 27px;
+	width: 1103px;
+	height: 47px;
+	opacity: 0.1;
+}
+
+#BAR {
+	position: absolute;
+	right: 25px;
+	top: 36px;
+	width: 1055px;
+	height: 25px;
+	opacity: 0.3;
+}
+
+#NETWATCH {
+	position: absolute;
+	right: 60px;
+	top: 44px;
+	width: 70px;
+	height: 8px;
+}
+
+#BOX {
+	position: absolute;
+	left: 230px;
+	top: 162px;
+	width: 110px;
+	height: 140px;
+	opacity: 0.9;
+}
+
+#BOXX {
+	position: absolute;
+	left: 430px;
+	top: 170px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
+
+#BOXXX {
+	position: absolute;
+	left: 630px;
+	top: 170px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
+
+#BOXXXX {
+	position: absolute;
+	left: 830px;
+	top: 170px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
+
+#BOXXXXX {
+	position: absolute;
+	left: 1030px;
+	top: 170px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
+
+#XOB {
+	position: absolute;
+	left: 230px;
+	top: 370px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
+
+#XXOB {
+	position: absolute;
+	left: 430px;
+	top: 370px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
+
+#XXXOB {
+	position: absolute;
+	left: 630px;
+	top: 370px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
+
+#XXXXOB {
+	position: absolute;
+	left: 830px;
+	top: 370px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
+
+#XXXXXOB {
+	position: absolute;
+	left: 1030px;
+	top: 370px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.3;
+}
