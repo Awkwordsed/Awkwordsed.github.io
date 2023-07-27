@@ -1,0 +1,188 @@
+@font-face{
+  font-family: 'pirulen';
+  src: url('pirulen.otf') format('opentype');
+}
+
+body {
+    background-color: #313131;
+    background-image: linear-gradient(30deg, #515151 12%, transparent 12.5%, transparent 87%, #515151 87.5%, #515151), linear-gradient(150deg, #515151 12%, transparent 12.5%, transparent 87%, #515151 87.5%, #515151), linear-gradient(30deg, #515151 12%, transparent 12.5%, transparent 87%, #515151 87.5%, #515151), linear-gradient(150deg, #515151 12%, transparent 12.5%, transparent 87%, #515151 87.5%, #515151), linear-gradient(60deg, #51515177 25%, transparent 25.5%, transparent 75%, #51515177 75%, #51515177), linear-gradient(60deg, #51515177 25%, transparent 25.5%, transparent 75%, #51515177 75%, #51515177);
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+    margin: 0;
+    padding: 0;
+    height: 1280px;
+    animation: driftLeft 60s linear infinite; /* Adjust the duration (60s) as per your preference */
+}
+
+@keyframes driftLeft {
+    from {
+        background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+    }
+    to {
+        background-position: -1000px 0, -1000px 0, 10px 18px, 10px 18px, -1000px 0, 10px 18px;
+    }
+}
+
+.topbar {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  top: 0;
+}
+
+.topbar h1 {
+  font-family: 'pirulen';
+  color: #dcdcdc;
+}
+
+
+:root {
+  --primColor: #dcdcdc;
+  --secoColor: #555555;
+  --cornerRad: 0px;
+}
+
+details {
+  font-family: 'pirulen';
+  z-index: 3;
+  margin: 15px;
+}
+summary {
+  font-family: 'pirulen';
+  z-index: 3;
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding: 12px 12px;
+  width: 20px;
+  height: 17px;
+  background-color: var(--primColor);
+  border: 2px solid var(--secoColor);
+  border-radius: var(--cornerRad);
+  color: var(--secoColor);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+}
+summary::before,
+summary::after {
+  position: static;
+  top: 0;
+  left: 0;
+}
+summary::before {
+  content: "";
+}
+summary::after {
+  content: "III";
+  letter-spacing: -1px;
+}
+summary:hover {
+  transform: scale(1.1);
+}
+summary::marker {
+  font-size: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .menu {
+  animation-name: menuAnim;
+}
+details[open] summary::before {
+  content: "X";
+}
+details[open] summary::after {
+  content: "";
+}
+.menu {
+  z-index: 3;
+  height: 0;
+  width: 100%;
+  background-color: var(--primColor);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: closeMenu 300ms ease-in-out forwards;
+}
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color: var(--secoColor);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: left;
+  transition: filter 200ms linear 0s;
+}
+.menu a:nth-of-type(1) {
+  padding-top: 24px;
+}
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.menu a:hover {
+  filter: brightness(200%);
+}
+details::before {
+  content: "";
+  color: var(--secoColor);
+  position: absolute;
+  margin-left: 80px;
+  padding: 10px 10px;
+  opacity: 0.4;
+}
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 312px;
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(150px, 2fr);
+    grid-auto-flow: dense;
+    padding: 2%;
+}
+
+.grid-item {
+    padding: 2rem;
+    font-size: 14px;
+    color: #ccc;
+    background-color: #111111cc;
+}
+
+.span-1 {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+}
+
+.span-2 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.span-3 {
+    grid-column-end: span 2.5;
+    grid-row-end: span 2.5;
+}
