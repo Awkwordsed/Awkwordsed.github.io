@@ -32,7 +32,10 @@ body {
   top: 0;
 }
 
-.topbar h1 {
+.topbar p {
+  position: relative;
+  top: 7px;
+  font-size: 1.3rem;
   font-family: 'pirulen';
   color: #dcdcdc;
 }
@@ -186,3 +189,5 @@ details[open]::before {
     grid-column-end: span 2.5;
     grid-row-end: span 2.5;
 }
+
+
